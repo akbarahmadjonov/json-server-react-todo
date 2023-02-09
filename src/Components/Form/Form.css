@@ -1,0 +1,11 @@
+.span {
+  cursor: pointer !important;
+}
+
+.span:hover {
+  background-color: #c1c1c1 !important;
+}
+
+.check {
+  cursor: pointer !important;
+}
