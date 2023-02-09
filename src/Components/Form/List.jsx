@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 import "./Form.css";
+import { toast } from "react-toastify";
 
 const Form = () => {
   const [data, setData] = useState([]);
@@ -35,6 +36,7 @@ const Form = () => {
       .delete(`http://localhost:8080/todos/${id}`)
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
+    toast.error("Yoo!, Task has been deleted permanently!");
   };
 
   const handleEdit = (id) => {
@@ -43,6 +45,7 @@ const Form = () => {
       id
     );
     // If prompt value is false return false
+    toast.info("Yoo!, Task has been edited!");
     if (!newPrompt) {
       return false;
     }
