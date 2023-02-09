@@ -59,6 +59,16 @@ const Form = () => {
 
   return (
     <div className="container">
+      <a className="mt-4 d-block" href="https://todoappreact-app.netlify.app/">
+        <i class="fa-solid fa-circle-exclamation"></i> Did you find any error?
+        feel free to try this, built with React{" "}
+      </a>
+      <a
+        className="mt-4 d-block"
+        href="https://github.com/akbarahmadjonov/todo-app-react"
+      >
+        <i class="fa-brands fa-github"></i> GitHub repository{" "}
+      </a>
       <div className="d-flex justify-content-center align-items-center mt-5"></div>
       <div className="row flex-column">
         <form
